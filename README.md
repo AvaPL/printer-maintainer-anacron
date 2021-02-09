@@ -1,6 +1,9 @@
 # printer-maintainer-anacron
 An anacron job that helps user in keeping printer's head in good health by printing a test page once a week.
 
+## Installation
+Just run `install.sh` and everything will be ready.
+
 ## Job settings
 The job will be run by `anacron`. The configuration can be found in `/etc/anacrontab`. Check if values here are optimal for a cron.weekly job.
 
