@@ -15,4 +15,4 @@ sudo systemctl start cups
 ```
 Then go to http://localhost:631/admin/ - here you can add a printer via GUI. Remember to chose correct driver (called "Model" in GUI). At the end check if the default values are correct (especially paper size). To make it default printer from the "Printers" tab select the printer and select "Set As Server Default" in the second dropdown.
 
-If you don't have a driver for printer installed it may be in Gutenprint. Install `gutenprint` and `foomatic-db-gutenprint-ppds` to get drivers for many printers.
+If you don't have a driver for printer installed it may be in Gutenprint. Install `gutenprint` and `foomatic-db-gutenprint-ppds` to get drivers for many printers. After installing/updating Gutenprint run `cups-genppdupdate`.
