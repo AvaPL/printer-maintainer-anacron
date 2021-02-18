@@ -7,6 +7,8 @@ Just run `install.sh` and everything will be ready.
 ## Job settings
 The job will be run by `anacron`. The configuration can be found in `/etc/anacrontab`. Check if values here are optimal for a cron.weekly job.
 
+**Important note:** `anacron` is run by a hourly cron job. It means that in the worst case the job will run after 1 hour + delays configured in `/etc/anacrontab`. 
+
 ## Appendix: Installing a printer
 Enable cups:
 ```
